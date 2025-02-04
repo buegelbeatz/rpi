@@ -116,7 +116,7 @@ Connect to power supply:
 
 connect to your raspberry via ssh:
 
-ssh pi@bix-rpi-0.local
+`ssh pi@b<your rpi hostname>.local`
 
 > *Note:* This will only work if your router could resolve the name via DNS otherwise start with the ip address.
 
@@ -124,7 +124,7 @@ You can add the following entry to your ~/.ssh/config:
 
 ```config
 Host rpi0
-Hostname bix-rpi-0.local # or the ip address here
+Hostname <your rpi hostname>.local # or the ip address here
 StrictHostKeyChecking no
 User pi
 IdentityFile ~/.ssh/id_rsa
